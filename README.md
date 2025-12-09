@@ -171,7 +171,7 @@ bringletech/
 │  │     └─ product_card.dart
 │  └─ main.dart
 ├─ pubspec.yaml
-└─ README.md
+
 ```
 
 ---
