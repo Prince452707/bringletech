@@ -120,40 +120,40 @@ class ProductListScreen extends GetView<ProductController> {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 12),
-                  SizedBox(
-                    height: 40,
-                    child: Obx(
-                      () => ListView.separated(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: controller.categories.length,
-                        separatorBuilder: (context, index) =>
-                            const SizedBox(width: 8),
-                        itemBuilder: (context, index) {
-                          final cat = controller.categories[index];
-                          final isSelected =
-                              cat == controller.selectedCategory.value;
-                          return ChoiceChip(
-                            label: Text(
-                              cat.toUpperCase(),
-                              style: TextStyle(
-                                color: isSelected
-                                    ? Colors.white
-                                    : AppColors.textPrimary,
-                                fontWeight: isSelected
-                                    ? FontWeight.bold
-                                    : FontWeight.normal,
-                              ),
-                            ),
-                            selected: isSelected,
-                            selectedColor: AppColors.primary,
-                            onSelected: (selected) =>
-                                controller.selectCategory(cat),
-                          );
-                        },
-                      ),
-                    ),
-                  ),
+                  //  const SizedBox(height: 12),
+                  // SizedBox(
+                  //   height: 40,
+                  //   child: Obx(
+                  //     () => ListView.separated(
+                  //       scrollDirection: Axis.horizontal,
+                  //       itemCount: controller.categories.length,
+                  //       separatorBuilder: (context, index) =>
+                  //           const SizedBox(width: 8),
+                  //       itemBuilder: (context, index) {
+                  //         final cat = controller.categories[index];
+                  //         final isSelected =
+                  //             cat == controller.selectedCategory.value;
+                  //         return ChoiceChip(
+                  //           label: Text(
+                  //             cat.toUpperCase(),
+                  //             style: TextStyle(
+                  //               color: isSelected
+                  //                   ? Colors.white
+                  //                   : AppColors.textPrimary,
+                  //               fontWeight: isSelected
+                  //                   ? FontWeight.bold
+                  //                   : FontWeight.normal,
+                  //             ),
+                  //           ),
+                  //           selected: isSelected,
+                  //           selectedColor: AppColors.primary,
+                  //           onSelected: (selected) =>
+                  //               controller.selectCategory(cat),
+                  //         );
+                  //       },
+                  //     ),
+                  //   ),
+                  // ),
                 ],
               ),
             ),
